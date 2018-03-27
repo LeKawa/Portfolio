@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Fasterone';
+  src: url("../font/FasterOne-Regular.ttf");
+}
+@font-face {
+  font-family: 'latoregular';
+  src: url("../font/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("../font/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: 'latolight';
+  src: url("../font/Lato-Light.ttf");
+}
+
+//Color
+$mainColor: #4D7FD5;
+$secondaryColor: #4D61D6;
+$ultraColor: #927EEC;
+
+//bearkpoint
+$bp-tablet: 600px;
+$bp-desktop: 949px;
+$bp-desktop-large: 1200px;
+$bp-desktop-x-large: 1800px;

@@ -1,0 +1,82 @@
+html {
+  background-color: #0057FF;
+}
+
+.container {
+  margin-top: 2.5%;
+  width: 95%;
+  background-color: white;
+
+  &-title {
+    height: 100vh;
+
+    &-first {
+      padding-top: 30vh;
+      text-align: center;
+      font-family: 'Fasterone';
+      font-size: 20px;
+      letter-spacing: 5px;
+      @include for-size (tablet-portrait-up) {
+        font-size: 50px;
+      }
+    }
+
+    &-down {
+      margin-top: 55vh;
+      height: 10vh;
+      width: 100%;
+
+      &-imgcontent {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        background-color: yellow;
+      }
+
+      &-trait {
+        margin: 10px auto;
+        width: 40px;
+        display: flex;
+        height: 40px;
+
+        &-left {
+          width: 50%;
+          border-right: 1px solid black;
+        }
+
+        &-right {
+          width: 50%;
+          border-left: 1px solid black;
+        }
+      }
+    }
+  }
+
+  &-about {
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 100px;
+    @include for-size (tablet-portrait-up) {
+      width: 40%;
+    }
+
+    &-text {
+      padding-top: 80px;
+      font-family: 'latoregular';
+      line-height: 180%;
+      font-size: 16px;
+      @include for-size (tablet-portrait-up) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-maintitle {
+    text-align: center;
+    font-family: 'Fasterone';
+    font-size: 32px;
+    @include for-size (tablet-portrait-up) {
+      font-size: 48px;
+    }
+  }
+}
