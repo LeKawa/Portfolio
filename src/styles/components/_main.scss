@@ -13,7 +13,7 @@ html {
     height: 100vh;
 
     &-first {
-      padding-top: 30vh;
+      padding-top: 40vh;
       text-align: center;
       font-family: 'Fasterone';
       font-size: 20px;
@@ -24,7 +24,7 @@ html {
     }
 
     &-down {
-      margin-top: 55vh;
+      margin-top: 45vh;
       height: 10vh;
       width: 100%;
 
@@ -32,7 +32,11 @@ html {
         width: 30px;
         height: 30px;
         margin: 0 auto;
-        background-color: yellow;
+        &-img {
+          width: 100%;
+          height: auto;
+          opacity: 0.6;
+        }
       }
 
       &-trait {
@@ -78,7 +82,7 @@ html {
     font-size: 32px;
     margin-bottom: 75px;
     @include for-size (tablet-portrait-up) {
-      font-size: 52px;
+      font-size: 54px;
       margin-bottom: 125Px;
     }
   }
@@ -97,18 +101,65 @@ html {
         margin-bottom: 50px;
         width: 100%;
         box-shadow: 0 -12px 32px 0 rgba(0,0,0,0.05);
-        height: 400px;
-        background-color: red;
+        background-color: #0057FF;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Fasterone';
+        color: white;
+        font-size: 28px;
+        letter-spacing: 3px;
         @include for-size (tablet-portrait-up) {
           width: 40%;
           height: 400px;
         }
+        &-text {
+          text-decoration: none;
+        }
 
-        &-img {
+        &-img1 {
           width: 100%;
           height: auto;
+          transition: all 0.2s ease-out;
+
+          &:hover {
+            opacity: 0;
+          }
+        }
+
+        &-img2 {
+          width: 100%;
+          height: auto;
+          transition: all 0.2s ease-out;
+
+          &:hover {
+            opacity: 0;
+          }
+        }
+
+        &-img3 {
+          width: 100%;
+          height: auto;
+          transition: all 0.2s ease-out;
+
+          &:hover {
+            opacity: 0;
+          }
+        }
+
+        &-img4 {
+          width: 100%;
+          height: auto;
+          transition: all 0.2s ease-out;
+
+          &:hover {
+            opacity: 0;
+          }
         }
       }
     }
+  }
+  &-contact {
+    text-align: center;
+    font-size: 18px;
   }
 }
