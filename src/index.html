@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="icon" href="img/logo.png"/>
+  <link rel="icon" href="img/logo.png" />
   <title>Hector.Portfolio</title>
 </head>
 
@@ -37,7 +37,7 @@
             <img src="img/architecture.png" alt="architecture" title="projets" class="container-projects-content-item-img1">
             <p class="container-projects-content-item-text">Website</p>
           </a>
-          <a href="#"  class="container-projects-content-item">
+          <a href="#" class="container-projects-content-item">
             <img src="img/minecraftclick.png" alt="minecraft" title="projets" class="container-projects-content-item-img2">
             <p class="container-projects-content-item-text">Website</p>
           </a>
@@ -60,13 +60,37 @@
         </div>
       </section>
       <section class="container-contact">
+
         <p class="container-contact-text">alors ça vous a plu ?</p>
-        <p class="container-contact-link">> Contactez moi < </p>
+        <p class="container-contact-link">> Contactez moi
+          < </p>
+            <div class="modal">
+              <div class="modal_overlay"></div>
+              <div class="modal_content">
+                <p class="">EMAIL</p>
+                <p class="">TELEPHONE</p>
+                <p class="">LINKEDIN</p>
+              </div>
+            </div>
 
       </section>
     </div>
   </section>
+  <script>
+  var btn = document.querySelector('.container-contact-link');
+       var modal = document.querySelector('.modal');
+       var overlay = document.querySelector('.modal_overlay');
+
+       btn.addEventListener('click', function() {
+           modal.style.display = 'block';
+       });
+
+       overlay.addEventListener('click', function() {
+           modal.style.display = '';
+       });
+  </script>
   <script src="index.js">
   </script>
 </body>
+
 </html>
