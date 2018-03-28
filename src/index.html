@@ -65,11 +65,12 @@
         <p class="container-contact-link">> Contactez moi
           < </p>
             <div class="modal">
-              <div class="modal_overlay"></div>
-              <div class="modal_content">
-                <p class="">EMAIL</p>
-                <p class="">TELEPHONE</p>
-                <p class="">LINKEDIN</p>
+              <div class="modal-overlay"></div>
+              <div class="modal-content">
+                <p class="modal-content-text">EMAIL</p>
+                <p class="modal-content-text">Twitter</p>
+                <p class="modal-content-text">instagram</p>
+                <p class="modal-content-text">LINKEDIN</p>
               </div>
             </div>
 
@@ -79,7 +80,7 @@
   <script>
   var btn = document.querySelector('.container-contact-link');
        var modal = document.querySelector('.modal');
-       var overlay = document.querySelector('.modal_overlay');
+       var overlay = document.querySelector('.modal-overlay');
 
        btn.addEventListener('click', function() {
            modal.style.display = 'block';
