@@ -121,11 +121,11 @@ html {
         letter-spacing: 3px;
         @include for-size (tablet-portrait-up) {
           width: 40%;
-          height: 400px;
         }
 
         &-text {
           text-decoration: none;
+          padding-bottom: 10px;
         }
 
         &-img1 {
@@ -219,15 +219,17 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
   width: 90%;
+  height: 30vh;
   margin: 20vh auto;
   background: #fff;
   @include for-size (tablet-portrait-up) {
-    width: 50%;
+    width: 65%;
+    height: 50vh;
   }
 
   &-social {
@@ -237,7 +239,9 @@ html {
     padding-left: 20px;
     padding-bottom: 50px;
     @include for-size (tablet-portrait-up) {
-      width: 50%;
+      width: 60%;
+      padding-top: 10%;
+      padding-left: 40px;
     }
 
     &-link {
@@ -264,7 +268,9 @@ html {
     text-align: left;
     font-family: 'latoregular';
     @include for-size (tablet-portrait-up) {
-      font-size: 24px;
+      font-size: 28px;
+      padding-top: 70px;
+      padding-left: 40px;
     }
   }
 }
